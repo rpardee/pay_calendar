@@ -25,4 +25,30 @@ thead th {
     color: #f8f9fa;
     background: #34495e;
     padding: 1em 0.8rem;
+    text-align: center ;
 }
+
+td {
+    padding: 0.8em 0.8rem;
+    text-align: center ;
+}
+tr.current-week {
+  background: pink ;
+}
+
+tr.past-week {
+  background: grey ;
+}
+
+tr.future-week:nth-child(odd) {
+    background: #f0f0f3;
+}
+
+tbody tr:hover {
+    background: #d7ecec;
+}
+
+td[rowspan="2"]:empty {
+  background-color: yellow ;
+}
+

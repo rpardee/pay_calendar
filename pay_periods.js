@@ -1,37 +1,98 @@
+const dateParser = d3.timeParse("%m/%d/%Y") ;
+const dateFormat = d => d3.timeFormat("%b %e")(dateParser(d)) ;
+const holiDateFormat = d => d3.timeFormat("%A %b %e")(dateParser(d)) ;
+
+function getHolidays(pp, holidays) {
+  st = dateParser(pp.start_date) ;
+  en = dateParser(pp.end_date) ;
+  ret = '' ;
+  holidays.forEach((hol) => {
+    hd = dateParser(hol.date) ;
+    if (st < hd && hd < en) {
+      ret += `<p>${hol.name}: ${holiDateFormat(hol.date)}</p>` ;
+    }
+  }) ;
+  return ret ;
+}
+
+function cellContents(pp, col) {
+  if (col.holds === "start_date") {
+    return `${dateFormat(pp.start_date)} → ${dateFormat(pp.end_date)}` ;
+  } else if (col.holds === 'effort_certification_period' && 'effort_certification_period' in pp) {
+    return `Period ${pp.effort_certification_period}` ;
+  } else if (col.holds === 'holidays') {
+    return getHolidays(pp, data.holidays) ;
+  }
+  // return dateFormat(pp[col.holds]) ;
+  return pp[col.holds] === undefined ? undefined : dateFormat(pp[col.holds]) ;
+}
+
+function ppClass(pp) {
+  st = dateParser(pp.start_date) ;
+  en = dateParser(pp.end_date) ;
+  today = Date.now() ;
+  // today = new Date('1/19/2021') ;
+  if (en < today) {
+    return 'past-week' ;
+  } else if (st < today && today < en) {
+    return 'current-week' ;
+  }
+  return 'future-week' ;
+}
+
 const cols = [
-  {"label": "Pay Period Beginning - Ending", "holds": ""},
-  {"label": "Grant-funded Exempt Timecards Due", "holds": ""},
-  {"label": "Timecard Approval Due Date", "holds": ""},
-  {"label": "PAT Changes Due", "holds": ""},
-  {"label": "Payday & PM Pat Aprvl Due", "holds": ""},
-  {"label": "Observed Holiday", "holds": ""},
-  {"label": "Effort Certification Period", "holds": ""},
+  {"label": "Dates", "holds": "start_date"},
+  {"label": "<abbr title = 'For Exempt employees on Grant-funded projects'>Timecards Due</abbr>", "holds": "timecard_submission_due"},
+  {"label": "Timecard Approvals By", "holds": "timecard_approval_due"},
+  {"label": "PAT Changes By", "holds": "pat_submission_due"},
+  {"label": "Payday! <p>PM PAT Approvals By</p>", "holds": "pat_approval_due"},
+  {"label": "Observed Holiday", "holds": "holidays"},
+  {"label": "Effort Certification Period", "holds": "effort_certification_period"},
 ]
 
 async function draw_calendar() {
 
   data = await d3.json('./pay_periods.json') ;
+
   const table_div = d3.select("#placeholder") ;
   const table = table_div.append("table")
-  table.append("thead")
-    .selectAll("thead")
+  const thed = table.append("thead")
+  ;
+  thed.append("th").text("Pay Period") ;
+  thed.selectAll("th.normal")
     .data(cols)
     .enter()
       .append("th")
-      .text((d) => d.label)
+      .attr("class", "normal")
+      .html((d) => d.label)
   ;
-  tbod = table.append("tbody") ;
-  tbod.selectAll("tr")
-    .data(data.pay_periods)
-    .enter()
-      .append("tr")
-        .selectAll("td")
-        .data(cols)
-        .enter()
-          .append("td")
-          .text((d) => d.label)
+  const tbod = table.append("tbody") ;
+
+  data.pay_periods.forEach((pp, i) => {
+    const roe = tbod.append("tr")
+      .attr("class", ppClass(pp))
+    ;
+    roe.append("td").text(i+1) ;
+    roe.selectAll("td.normal")
+      .data(cols)
+      .enter().append("td")
+        .html((col) => cellContents(pp, col))
+        .attr("class", "normal")
+        .attr("rowspan", (col) => {
+          // console.table(pp) ;
+          if (col.holds === 'effort_certification_period') {
+            return '2' ;
+          } else {
+            return '1' ;
+          }
+        })
+  }) ;
+  // Ditch the extra empty tds for the certification periods.
+  d3.selectAll('td[rowspan="2"]:empty').remove() ;
+
   ;
   console.log(data) ;
 }
 
 draw_calendar() ;
+
