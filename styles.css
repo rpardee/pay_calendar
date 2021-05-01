@@ -40,15 +40,12 @@ tr.past-week {
   background: grey ;
 }
 
-tr.future-week:nth-child(odd) {
-    background: #f0f0f3;
-}
-
 tbody tr:hover {
     background: #d7ecec;
 }
 
-td[rowspan="2"]:empty {
-  background-color: yellow ;
+/*tr.future-week:nth-child(odd) {
+    background: #f0f0f3;
 }
+*/
 
