@@ -17,7 +17,7 @@ function getHolidays(pp, holidays) {
 
 function cellContents(pp, col) {
   if (col.holds === "start_date") {
-    return `${dateFormat(pp.start_date)} → ${dateFormat(pp.end_date)}` ;
+    return `${dateFormat(pp.start_date)} &mdash; ${dateFormat(pp.end_date)}` ;
   } else if (col.holds === 'effort_certification_period' && 'effort_certification_period' in pp) {
     return `Period ${pp.effort_certification_period}` ;
   } else if (col.holds === 'holidays') {
@@ -44,10 +44,10 @@ const cols = [
   {"label": "Dates", "holds": "start_date"},
   {"label": "<abbr title = 'For Exempt employees on Grant-funded projects'>Timecards Due</abbr>", "holds": "timecard_submission_due"},
   {"label": "Timecard Approvals By", "holds": "timecard_approval_due"},
-  {"label": "PAT Changes By", "holds": "pat_submission_due"},
+  {"label": "<a title='Manage Your PAT here' href='https://onelinkfscm.kp.org/psc/fsolprd/EMPLOYEE/ERP/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_KP_GRANTS_MGMT&PanelCollapsible=Y&PTPPB_GROUPLET_ID=KP_GRANTS_MGMT&CRefName=ADMN_NAVCOLL_18'>PAT Changes By</a>", "holds": "pat_submission_due"},
   {"label": "Payday! <p>PM PAT Approvals By</p>", "holds": "pat_approval_due"},
   {"label": "Observed Holiday", "holds": "holidays"},
-  {"label": "Effort Certification Period", "holds": "effort_certification_period"},
+  {"label": "<a title = 'Certify your effort here' href = 'https://onelinkfscm.kp.org/psc/fsolprd/EMPLOYEE/ERP/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_KP_GRANTS_MGMT&PanelCollapsible=Y&PTPPB_GROUPLET_ID=KP_GRANTS_MGMT&CRefName=ADMN_NAVCOLL_18'>Effort Certification Period</a>", "holds": "effort_certification_period"},
 ]
 
 async function draw_calendar() {
