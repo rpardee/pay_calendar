@@ -40,12 +40,25 @@ function ppClass(pp) {
   return 'future-week' ;
 }
 
+function getCellClass(pp, col) {
+  if (dateParser(pp.pat_submission_due) < dateParser(pp.timecard_approval_due)) {
+    if (col.holds === "timecard_approval_due") {
+      return "tad-early" ;
+    }
+    if (col.holds === "pat_submission_due") {
+      return "psd-early" ;
+    }
+  }
+  return "class" in col ? col.class : "normal" ;
+}
+
+
 const cols = [
   {"label": "Dates", "holds": "start_date"},
   {"label": "<abbr title = 'For Exempt employees on Grant-funded projects'>Timecards Due Thursday</abbr>", "holds": "timecard_submission_due"},
   {"label": "Timecard Approvals <p>By Noon on</p>", "holds": "timecard_approval_due"},
   {"label": "<a title='Manage Your PAT here' href='https://onelinkfscm.kp.org/psc/fsolprd/EMPLOYEE/ERP/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_KP_GRANTS_MGMT&PanelCollapsible=Y&PTPPB_GROUPLET_ID=KP_GRANTS_MGMT&CRefName=ADMN_NAVCOLL_18'>PAT Changes By", "holds": "pat_submission_due"},
-  {"label": "Payday! <p>PM PAT Approvals By</p></a><p>Noon on</p>", "holds": "pat_approval_due"},
+  {"label": "Payday! <p>PM PAT Approvals<br/>By Noon on</p>", "holds": "pat_approval_due"},
   {"label": "Observed Holiday", "holds": "holidays", "class": "holiday"},
   {"label": "<a title = 'Certify your effort here' href = 'https://onelinkfscm.kp.org/psc/fsolprd/EMPLOYEE/ERP/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_KP_GRANTS_MGMT&PanelCollapsible=Y&PTPPB_GROUPLET_ID=KP_GRANTS_MGMT&CRefName=ADMN_NAVCOLL_18'>Effort Certification Period</a>", "holds": "effort_certification_period", "class": "eff-cert"},
 ]
@@ -72,12 +85,15 @@ async function draw_calendar() {
     const roe = tbod.append("tr")
       .attr("class", ppClass(pp))
     ;
-    roe.append("td").text(i+1) ;
+    roe.append("td").text(i+1)
+      .attr("class", [9, 22].includes(i+1) ? 'no-deduct' : 'normnum')
+      .attr("title", [9, 22].includes(i+1) ? 'Semi-monthly Medical & Dental Pre-tax deductions not taken from these paychecks' : '')
+    ;
     roe.selectAll("td.normal")
       .data(cols)
       .enter().append("td")
         .html((col) => cellContents(pp, col))
-        .attr("class", (col) => "class" in col ? col.class : "normal")
+        .attr("class", (col) => getCellClass(pp, col))
         .attr("rowspan", (col) => {
           // console.table(pp) ;
           if (col.holds === 'effort_certification_period') {

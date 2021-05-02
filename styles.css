@@ -73,4 +73,25 @@ tr.future-week:nth-child(odd) {
     background: #d7ecec;
 }
 
+tr.future-week td.psd-early {
+  background: yellow ;
+}
 
+tr.future-week td.psd-early::after {
+  content: "\A Friday" ;
+  white-space: pre ;
+}
+
+tr.future-week td.tad-early {
+  color:red ;
+}
+
+tr.future-week td.tad-early::after {
+  content: "\A 8am" ;
+  white-space: pre ;
+}
+
+td.no-deduct::after {
+  content: "\A $$$";
+  white-space: pre ;
+}
