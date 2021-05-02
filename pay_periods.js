@@ -89,6 +89,8 @@ async function draw_calendar() {
   }) ;
   // Ditch the extra empty tds for the certification periods.
   d3.selectAll('td.eff-cert:empty').remove() ;
+  // Bring the current week into view.
+  document.querySelector('tr.current-week').scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"}) ;
 
   ;
   console.log(data) ;
