@@ -23,7 +23,7 @@ thead th {
     top: 0;
     color: #f8f9fa;
     background: #34495e;
-    padding: 1em 0.8rem;
+    padding: .2em 0.8rem;
     text-align: center ;
 }
 
@@ -32,6 +32,9 @@ th a {
 }
 
 td p {
+  padding: 0 ;
+}
+th p {
   padding: 0 ;
 }
 
