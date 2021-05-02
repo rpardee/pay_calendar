@@ -7,7 +7,8 @@
       "timecard_approval_due": "1/4/2021",
       "pat_submission_due": "1/4/2021",
       "pat_approval_due": "1/8/2021",
-      "effort_certification_period": 1
+      "effort_certification_period": 1,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "1/3/2021",
@@ -24,7 +25,8 @@
       "timecard_approval_due": "2/01/2021",
       "pat_submission_due": "2/01/2021",
       "pat_approval_due": "2/05/2021",
-      "effort_certification_period": 2
+      "effort_certification_period": 2,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "1/31/2021",
@@ -41,7 +43,8 @@
       "timecard_approval_due": "03/01/2021",
       "pat_submission_due": "03/01/2021",
       "pat_approval_due": "03/05/2021",
-      "effort_certification_period": 3
+      "effort_certification_period": 3,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "02/28/2021",
@@ -58,7 +61,8 @@
       "timecard_approval_due": "03/29/2021",
       "pat_submission_due": "03/29/2021",
       "pat_approval_due": "04/02/2021",
-      "effort_certification_period": 4
+      "effort_certification_period": 4,
+      "eff_cert_duration": 3
     },
     {
       "start_date": "03/28/2021",
@@ -74,8 +78,7 @@
       "timecard_submission_due": "04/22/2021",
       "timecard_approval_due": "04/26/2021",
       "pat_submission_due": "04/26/2021",
-      "pat_approval_due": "04/30/2021",
-      "effort_certification_period": 5
+      "pat_approval_due": "04/30/2021"
     },
     {
       "start_date": "04/25/2021",
@@ -83,7 +86,9 @@
       "timecard_submission_due": "05/06/2021",
       "timecard_approval_due": "05/10/2021",
       "pat_submission_due": "05/10/2021",
-      "pat_approval_due": "05/14/2021"
+      "pat_approval_due": "05/14/2021",
+      "effort_certification_period": 5,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "05/09/2021",
@@ -91,8 +96,7 @@
       "timecard_submission_due": "05/20/2021",
       "timecard_approval_due": "05/24/2021",
       "pat_submission_due": "05/24/2021",
-      "pat_approval_due": "05/28/2021",
-      "effort_certification_period": 6
+      "pat_approval_due": "05/28/2021"
     },
     {
       "start_date": "05/23/2021",
@@ -100,7 +104,9 @@
       "timecard_submission_due": "06/03/2021",
       "timecard_approval_due": "06/07/2021",
       "pat_submission_due": "06/07/2021",
-      "pat_approval_due": "06/11/2021"
+      "pat_approval_due": "06/11/2021",
+      "effort_certification_period": 6,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "06/06/2021",
@@ -108,8 +114,7 @@
       "timecard_submission_due": "06/17/2021",
       "timecard_approval_due": "06/21/2021",
       "pat_submission_due": "06/21/2021",
-      "pat_approval_due": "06/25/2021",
-      "effort_certification_period": 7
+      "pat_approval_due": "06/25/2021"
     },
     {
       "start_date": "06/20/2021",
@@ -117,7 +122,9 @@
       "timecard_submission_due": "07/01/2021",
       "timecard_approval_due": "07/06/2021",
       "pat_submission_due": "07/02/2021",
-      "pat_approval_due": "07/09/2021"
+      "pat_approval_due": "07/09/2021",
+      "effort_certification_period": 7,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "07/04/2021",
@@ -125,8 +132,7 @@
       "timecard_submission_due": "07/15/2021",
       "timecard_approval_due": "07/19/2021",
       "pat_submission_due": "07/19/2021",
-      "pat_approval_due": "07/23/2021",
-      "effort_certification_period": 8
+      "pat_approval_due": "07/23/2021"
     },
     {
       "start_date": "07/18/2021",
@@ -134,7 +140,9 @@
       "timecard_submission_due": "07/29/2021",
       "timecard_approval_due": "08/02/2021",
       "pat_submission_due": "08/02/2021",
-      "pat_approval_due": "08/06/2021"
+      "pat_approval_due": "08/06/2021",
+      "effort_certification_period": 8,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "08/01/2021",
@@ -142,8 +150,7 @@
       "timecard_submission_due": "08/12/2021",
       "timecard_approval_due": "08/16/2021",
       "pat_submission_due": "08/16/2021",
-      "pat_approval_due": "08/20/2021",
-      "effort_certification_period": 9
+      "pat_approval_due": "08/20/2021"
     },
     {
       "start_date": "08/15/2021",
@@ -151,7 +158,9 @@
       "timecard_submission_due": "08/26/2021",
       "timecard_approval_due": "08/30/2021",
       "pat_submission_due": "08/30/2021",
-      "pat_approval_due": "09/03/2021"
+      "pat_approval_due": "09/03/2021",
+      "effort_certification_period": 9,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "08/29/2021",
@@ -159,8 +168,7 @@
       "timecard_submission_due": "09/09/2021",
       "timecard_approval_due": "09/13/2021",
       "pat_submission_due": "09/13/2021",
-      "pat_approval_due": "09/17/2021",
-      "effort_certification_period": 10
+      "pat_approval_due": "09/17/2021"
     },
     {
       "start_date": "09/12/2021",
@@ -168,7 +176,9 @@
       "timecard_submission_due": "09/23/2021",
       "timecard_approval_due": "09/27/2021",
       "pat_submission_due": "09/27/2021",
-      "pat_approval_due": "10/01/2021"
+      "pat_approval_due": "10/01/2021",
+      "effort_certification_period": 10,
+      "eff_cert_duration": 3
     },
     {
       "start_date": "09/26/2021",
@@ -176,8 +186,7 @@
       "timecard_submission_due": "10/07/2021",
       "timecard_approval_due": "10/11/2021",
       "pat_submission_due": "10/11/2021",
-      "pat_approval_due": "10/15/2021",
-      "effort_certification_period": 11
+      "pat_approval_due": "10/15/2021"
     },
     {
       "start_date": "10/10/2021",
@@ -194,7 +203,8 @@
       "timecard_approval_due": "11/08/2021",
       "pat_submission_due": "11/08/2021",
       "pat_approval_due": "11/12/2021",
-      "effort_certification_period": 12
+      "effort_certification_period": 11,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "11/07/2021",
@@ -211,7 +221,8 @@
       "timecard_approval_due": "12/06/2021",
       "pat_submission_due": "12/06/2021",
       "pat_approval_due": "12/10/2021",
-      "effort_certification_period": 13
+      "effort_certification_period": 12,
+      "eff_cert_duration": 2
     },
     {
       "start_date": "12/05/2021",
@@ -228,7 +239,7 @@
       "timecard_approval_due": "01/03/2022",
       "pat_submission_due": "1/03/2022 ",
       "pat_approval_due": "01/07/2022",
-      "effort_certification_period": 14
+      "effort_certification_period": "2022 Period 1"
     }
   ],
   "holidays": [

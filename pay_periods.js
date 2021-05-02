@@ -19,7 +19,7 @@ function cellContents(pp, col) {
   if (col.holds === "start_date") {
     return `${dateFormat(pp.start_date)} &mdash; ${dateFormat(pp.end_date)}` ;
   } else if (col.holds === 'effort_certification_period' && 'effort_certification_period' in pp) {
-    return `Period ${pp.effort_certification_period}` ;
+    return typeof pp.effort_certification_period === "string" ? pp.effort_certification_period : `Period ${pp.effort_certification_period}` ;
   } else if (col.holds === 'holidays') {
     return getHolidays(pp, data.holidays) ;
   }
@@ -46,8 +46,8 @@ const cols = [
   {"label": "Timecard Approvals By", "holds": "timecard_approval_due"},
   {"label": "<a title='Manage Your PAT here' href='https://onelinkfscm.kp.org/psc/fsolprd/EMPLOYEE/ERP/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_KP_GRANTS_MGMT&PanelCollapsible=Y&PTPPB_GROUPLET_ID=KP_GRANTS_MGMT&CRefName=ADMN_NAVCOLL_18'>PAT Changes By</a>", "holds": "pat_submission_due"},
   {"label": "Payday! <p>PM PAT Approvals By</p>", "holds": "pat_approval_due"},
-  {"label": "Observed Holiday", "holds": "holidays"},
-  {"label": "<a title = 'Certify your effort here' href = 'https://onelinkfscm.kp.org/psc/fsolprd/EMPLOYEE/ERP/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_KP_GRANTS_MGMT&PanelCollapsible=Y&PTPPB_GROUPLET_ID=KP_GRANTS_MGMT&CRefName=ADMN_NAVCOLL_18'>Effort Certification Period</a>", "holds": "effort_certification_period"},
+  {"label": "Observed Holiday", "holds": "holidays", "class": "holiday"},
+  {"label": "<a title = 'Certify your effort here' href = 'https://onelinkfscm.kp.org/psc/fsolprd/EMPLOYEE/ERP/c/NUI_FRAMEWORK.PT_AGSTARTPAGE_NUI.GBL?CONTEXTIDPARAMS=TEMPLATE_ID%3aPTPPNAVCOL&scname=ADMN_KP_GRANTS_MGMT&PanelCollapsible=Y&PTPPB_GROUPLET_ID=KP_GRANTS_MGMT&CRefName=ADMN_NAVCOLL_18'>Effort Certification Period</a>", "holds": "effort_certification_period", "class": "eff-cert"},
 ]
 
 async function draw_calendar() {
@@ -77,18 +77,18 @@ async function draw_calendar() {
       .data(cols)
       .enter().append("td")
         .html((col) => cellContents(pp, col))
-        .attr("class", "normal")
+        .attr("class", (col) => "class" in col ? col.class : "normal")
         .attr("rowspan", (col) => {
           // console.table(pp) ;
           if (col.holds === 'effort_certification_period') {
-            return '2' ;
+            return `${'eff_cert_duration' in pp ? pp.eff_cert_duration : 1}` ;
           } else {
             return '1' ;
           }
         })
   }) ;
   // Ditch the extra empty tds for the certification periods.
-  d3.selectAll('td[rowspan="2"]:empty').remove() ;
+  d3.selectAll('td.eff-cert:empty').remove() ;
 
   ;
   console.log(data) ;
