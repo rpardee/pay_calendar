@@ -86,8 +86,8 @@ async function draw_calendar() {
       .attr("class", ppClass(pp))
     ;
     roe.append("td").text(i+1)
-      .attr("class", [9, 22].includes(i+1) ? 'no-deduct' : 'normnum')
-      .attr("title", [9, 22].includes(i+1) ? 'Semi-monthly Medical & Dental Pre-tax deductions not taken from these paychecks' : '')
+      .attr("class", [9, 20].includes(i+1) ? 'no-deduct' : 'normnum')
+      .attr("title", [9, 20].includes(i+1) ? 'Semi-monthly Medical & Dental Pre-tax deductions not taken from these paychecks' : '')
     ;
     roe.selectAll("td.normal")
       .data(cols)
