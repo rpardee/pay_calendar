@@ -1,0 +1,8 @@
+xlsx_to_json_notes.txt
+
+/*
+  paste from excel
+  remove bum lines
+  replace \b(\d{1})\b with 0$1
+
+*/

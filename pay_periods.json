@@ -1,289 +1,73 @@
 {
   "pay_periods": [
-
-    {
-      "start_date": "12/19/2021",
-      "end_date": "1/1/2022",
-      "timecard_submission_due": "12/30/2021",
-      "timecard_approval_due": "1/3/2022",
-      "pat_submission_due": "1/3/2022",
-      "pat_approval_due": "1/7/2022",
-      "effort_certification_period": 1,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "1/2/2022",
-      "end_date": "1/15/2022",
-      "timecard_submission_due": "1/13/2022",
-      "timecard_approval_due": "1/18/2022",
-      "pat_submission_due": "1/14/2022",
-      "pat_approval_due": "1/21/2022"
-    },
-    {
-      "start_date": "1/16/2022",
-      "end_date": "1/29/2022",
-      "timecard_submission_due": "1/27/2022",
-      "timecard_approval_due": "1/31/2022",
-      "pat_submission_due": "1/31/2022",
-      "pat_approval_due": "2/4/2022",
-      "effort_certification_period": 2,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "1/30/2022",
-      "end_date": "2/12/2022",
-      "timecard_submission_due": "2/10/2022",
-      "timecard_approval_due": "2/14/2022",
-      "pat_submission_due": "2/14/2022",
-      "pat_approval_due": "2/18/2022"
-    },
-    {
-      "start_date": "2/13/2022",
-      "end_date": "2/26/2022",
-      "timecard_submission_due": "2/24/2022",
-      "timecard_approval_due": "2/28/2022",
-      "pat_submission_due": "2/28/2022",
-      "pat_approval_due": "3/4/2022",
-      "effort_certification_period": 3,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "2/27/2022",
-      "end_date": "3/12/2022",
-      "timecard_submission_due": "3/10/2022",
-      "timecard_approval_due": "3/14/2022",
-      "pat_submission_due": "3/14/2022",
-      "pat_approval_due": "3/18/2022"
-    },
-    {
-      "start_date": "3/13/2022",
-      "end_date": "3/26/2022",
-      "timecard_submission_due": "3/24/2022",
-      "timecard_approval_due": "3/28/2022",
-      "pat_submission_due": "3/28/2022",
-      "pat_approval_due": "4/1/2022",
-      "effort_certification_period": 4,
-      "eff_cert_duration": 3
-    },
-    {
-      "start_date": "3/27/2022",
-      "end_date": "4/9/2022",
-      "timecard_submission_due": "4/7/2022",
-      "timecard_approval_due": "4/11/2022",
-      "pat_submission_due": "4/11/2022",
-      "pat_approval_due": "4/15/2022"
-    },
-    {
-      "start_date": "4/10/2022",
-      "end_date": "4/23/2022",
-      "timecard_submission_due": "4/21/2022",
-      "timecard_approval_due": "4/25/2022",
-      "pat_submission_due": "4/25/2022",
-      "pat_approval_due": "4/29/2022"
-    },
-    {
-      "start_date": "4/24/2022",
-      "end_date": "5/7/2022",
-      "timecard_submission_due": "5/5/2022",
-      "timecard_approval_due": "5/9/2022",
-      "pat_submission_due": "5/9/2022",
-      "pat_approval_due": "5/13/2022",
-      "effort_certification_period": 5,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "5/8/2022",
-      "end_date": "5/21/2022",
-      "timecard_submission_due": "5/19/2022",
-      "timecard_approval_due": "5/23/2022",
-      "pat_submission_due": "5/23/2022",
-      "pat_approval_due": "5/27/2022"
-    },
-    {
-      "start_date": "5/22/2022",
-      "end_date": "6/4/2022",
-      "timecard_submission_due": "6/2/2022",
-      "timecard_approval_due": "6/6/2022",
-      "pat_submission_due": "6/6/2022",
-      "pat_approval_due": "6/10/2022",
-      "effort_certification_period": 6,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "6/5/2022",
-      "end_date": "6/18/2022",
-      "timecard_submission_due": "6/16/2022",
-      "timecard_approval_due": "6/20/2022",
-      "pat_submission_due": "6/20/2022",
-      "pat_approval_due": "6/24/2022"
-    },
-    {
-      "start_date": "6/19/2022",
-      "end_date": "7/2/2022",
-      "timecard_submission_due": "6/30/2022",
-      "timecard_approval_due": "7/5/2022",
-      "pat_submission_due": "7/1/2022",
-      "pat_approval_due": "7/8/2022",
-      "effort_certification_period": 7,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "7/3/2022",
-      "end_date": "7/16/2022",
-      "timecard_submission_due": "7/14/2022",
-      "timecard_approval_due": "7/18/2022",
-      "pat_submission_due": "7/18/2022",
-      "pat_approval_due": "7/22/2022"
-    },
-    {
-      "start_date": "7/17/2022",
-      "end_date": "7/30/2022",
-      "timecard_submission_due": "7/28/2022",
-      "timecard_approval_due": "8/1/2022",
-      "pat_submission_due": "8/1/2022",
-      "pat_approval_due": "8/5/2022",
-      "effort_certification_period": 8,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "7/31/2022",
-      "end_date": "8/13/2022",
-      "timecard_submission_due": "8/11/2022",
-      "timecard_approval_due": "8/15/2022",
-      "pat_submission_due": "8/15/2022",
-      "pat_approval_due": "8/19/2022"
-    },
-    {
-      "start_date": "8/14/2022",
-      "end_date": "8/27/2022",
-      "timecard_submission_due": "8/25/2022",
-      "timecard_approval_due": "8/29/2022",
-      "pat_submission_due": "8/29/2022",
-      "pat_approval_due": "9/2/2022",
-      "effort_certification_period": 9,
-      "eff_cert_duration": 3
-    },
-    {
-      "start_date": "8/28/2022",
-      "end_date": "9/10/2022",
-      "timecard_submission_due": "9/8/2022",
-      "timecard_approval_due": "9/12/2022",
-      "pat_submission_due": "9/12/2022",
-      "pat_approval_due": "9/16/2022"
-    },
-    {
-      "start_date": "9/11/2022",
-      "end_date": "9/24/2022",
-      "timecard_submission_due": "9/22/2022",
-      "timecard_approval_due": "9/26/2022",
-      "pat_submission_due": "9/26/2022",
-      "pat_approval_due": "9/30/2022"
-    },
-    {
-      "start_date": "9/25/2022",
-      "end_date": "10/8/2022",
-      "timecard_submission_due": "10/6/2022",
-      "timecard_approval_due": "10/10/2022",
-      "pat_submission_due": "10/10/2022",
-      "pat_approval_due": "10/14/2022",
-      "effort_certification_period": 10,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "10/9/2022",
-      "end_date": "10/22/2022",
-      "timecard_submission_due": "10/20/2022",
-      "timecard_approval_due": "10/24/2022",
-      "pat_submission_due": "10/24/2022",
-      "pat_approval_due": "10/28/2022"
-    },
-    {
-      "start_date": "10/23/2022",
-      "end_date": "11/5/2022",
-      "timecard_submission_due": "11/3/2022",
-      "timecard_approval_due": "11/7/2022",
-      "pat_submission_due": "11/7/2022",
-      "pat_approval_due": "11/11/2022",
-      "effort_certification_period": 11,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "11/6/2022",
-      "end_date": "11/19/2022",
-      "timecard_submission_due": "11/17/2022",
-      "timecard_approval_due": "11/21/2022",
-      "pat_submission_due": "11/21/2022",
-      "pat_approval_due": "11/25/2022"
-    },
-    {
-      "start_date": "11/20/2022",
-      "end_date": "12/3/2022",
-      "timecard_submission_due": "12/1/2022",
-      "timecard_approval_due": "12/5/2022",
-      "pat_submission_due": "12/5/2022",
-      "pat_approval_due": "12/9/2022",
-      "effort_certification_period": 12,
-      "eff_cert_duration": 2
-    },
-    {
-      "start_date": "12/4/2022",
-      "end_date": "12/17/2022",
-      "timecard_submission_due": "12/15/2022",
-      "timecard_approval_due": "12/19/2022",
-      "pat_submission_due": "12/19/2022",
-      "pat_approval_due": "12/23/2022"
-    },
-    {
-      "start_date": "12/18/2022",
-      "end_date": "12/31/2022",
-      "timecard_submission_due": "12/29/2022",
-      "timecard_approval_due": "1/3/2023",
-      "pat_submission_due": "12/30/2022",
-      "pat_approval_due": "1/6/2023",
-      "effort_certification_period": "2023 Period 1"
-    }
-
+    {"start_date": "12/18/2022", "end_date": "12/31/2022", "timecard_submission_due": "12/29/2022", "timecard_approval_due": "01/02/2023", "pat_submission_due": "12/30/2022", "pat_approval_due": "01/06/2023", "effort_certification_period": 1, "eff_cert_duration": 2 },
+    {"start_date": "01/01/2023", "end_date": "01/14/2023", "timecard_submission_due": "01/12/2023", "timecard_approval_due": "01/16/2023", "pat_submission_due": "01/13/2023", "pat_approval_due": "01/20/2023"},
+    {"start_date": "01/15/2023", "end_date": "01/28/2023", "timecard_submission_due": "01/26/2023", "timecard_approval_due": "01/30/2023", "pat_submission_due": "01/30/2023", "pat_approval_due": "02/03/2023", "effort_certification_period": 2, "eff_cert_duration": 2 },
+    {"start_date": "01/29/2023", "end_date": "02/11/2023", "timecard_submission_due": "02/09/2023", "timecard_approval_due": "02/13/2023", "pat_submission_due": "02/13/2023", "pat_approval_due": "02/17/2023"},
+    {"start_date": "02/12/2023", "end_date": "02/25/2023", "timecard_submission_due": "02/23/2023", "timecard_approval_due": "02/27/2023", "pat_submission_due": "02/27/2023", "pat_approval_due": "03/03/2023", "effort_certification_period": 3, "eff_cert_duration": 3 },
+    {"start_date": "02/26/2023", "end_date": "03/11/2023", "timecard_submission_due": "03/09/2023", "timecard_approval_due": "03/13/2023", "pat_submission_due": "03/13/2023", "pat_approval_due": "03/17/2023"},
+    {"start_date": "03/12/2023", "end_date": "03/25/2023", "timecard_submission_due": "03/23/2023", "timecard_approval_due": "03/27/2023", "pat_submission_due": "03/27/2023", "pat_approval_due": "03/31/2023"},
+    {"start_date": "03/26/2023", "end_date": "04/08/2023", "timecard_submission_due": "04/06/2023", "timecard_approval_due": "04/10/2023", "pat_submission_due": "04/10/2023", "pat_approval_due": "04/14/2023", "effort_certification_period": 4, "eff_cert_duration": 2 },
+    {"start_date": "04/09/2023", "end_date": "04/22/2023", "timecard_submission_due": "04/20/2023", "timecard_approval_due": "04/24/2023", "pat_submission_due": "04/24/2023", "pat_approval_due": "04/28/2023"},
+    {"start_date": "04/23/2023", "end_date": "05/06/2023", "timecard_submission_due": "05/04/2023", "timecard_approval_due": "05/08/2023", "pat_submission_due": "05/08/2023", "pat_approval_due": "05/12/2023", "effort_certification_period": 5, "eff_cert_duration": 2 },
+    {"start_date": "05/07/2023", "end_date": "05/20/2023", "timecard_submission_due": "05/18/2023", "timecard_approval_due": "05/22/2023", "pat_submission_due": "05/22/2023", "pat_approval_due": "05/26/2023"},
+    {"start_date": "05/21/2023", "end_date": "06/03/2023", "timecard_submission_due": "06/01/2023", "timecard_approval_due": "06/05/2023", "pat_submission_due": "06/05/2023", "pat_approval_due": "06/09/2023", "effort_certification_period": 6, "eff_cert_duration": 2 },
+    {"start_date": "06/04/2023", "end_date": "06/17/2023", "timecard_submission_due": "06/15/2023", "timecard_approval_due": "06/19/2023", "pat_submission_due": "06/19/2023", "pat_approval_due": "06/23/2023"},
+    {"start_date": "06/18/2023", "end_date": "07/01/2023", "timecard_submission_due": "06/29/2023", "timecard_approval_due": "07/03/2023", "pat_submission_due": "07/03/2023", "pat_approval_due": "07/07/2023", "effort_certification_period": 7, "eff_cert_duration": 2 },
+    {"start_date": "07/02/2023", "end_date": "07/15/2023", "timecard_submission_due": "07/13/2023", "timecard_approval_due": "07/17/2023", "pat_submission_due": "07/17/2023", "pat_approval_due": "07/21/2023"},
+    {"start_date": "07/16/2023", "end_date": "07/29/2023", "timecard_submission_due": "07/27/2023", "timecard_approval_due": "07/31/2023", "pat_submission_due": "07/31/2023", "pat_approval_due": "08/04/2023", "effort_certification_period": 8, "eff_cert_duration": 2 },
+    {"start_date": "07/30/2023", "end_date": "08/12/2023", "timecard_submission_due": "08/10/2023", "timecard_approval_due": "08/14/2023", "pat_submission_due": "08/14/2023", "pat_approval_due": "08/18/2023"},
+    {"start_date": "08/13/2023", "end_date": "08/26/2023", "timecard_submission_due": "08/24/2023", "timecard_approval_due": "08/28/2023", "pat_submission_due": "08/28/2023", "pat_approval_due": "09/01/2023", "effort_certification_period": 9, "eff_cert_duration": 3 },
+    {"start_date": "08/27/2023", "end_date": "09/09/2023", "timecard_submission_due": "09/07/2023", "timecard_approval_due": "09/11/2023", "pat_submission_due": "09/11/2023", "pat_approval_due": "09/15/2023"},
+    {"start_date": "09/10/2023", "end_date": "09/23/2023", "timecard_submission_due": "09/21/2023", "timecard_approval_due": "09/25/2023", "pat_submission_due": "09/25/2023", "pat_approval_due": "09/29/2023"},
+    {"start_date": "09/24/2023", "end_date": "10/07/2023", "timecard_submission_due": "10/05/2023", "timecard_approval_due": "10/09/2023", "pat_submission_due": "10/09/2023", "pat_approval_due": "10/13/2023", "effort_certification_period": 10, "eff_cert_duration": 2 },
+    {"start_date": "10/08/2023", "end_date": "10/21/2023", "timecard_submission_due": "10/19/2023", "timecard_approval_due": "10/23/2023", "pat_submission_due": "10/23/2023", "pat_approval_due": "10/27/2023"},
+    {"start_date": "10/22/2023", "end_date": "11/04/2023", "timecard_submission_due": "11/02/2023", "timecard_approval_due": "11/06/2023", "pat_submission_due": "11/06/2023", "pat_approval_due": "11/10/2023", "effort_certification_period": 11, "eff_cert_duration": 2 },
+    {"start_date": "11/05/2023", "end_date": "11/18/2023", "timecard_submission_due": "11/16/2023", "timecard_approval_due": "11/20/2023", "pat_submission_due": "11/20/2023", "pat_approval_due": "11/24/2023"},
+    {"start_date": "11/19/2023", "end_date": "12/02/2023", "timecard_submission_due": "11/30/2023", "timecard_approval_due": "12/04/2023", "pat_submission_due": "12/04/2023", "pat_approval_due": "12/08/2023", "effort_certification_period": 12, "eff_cert_duration": 2 },
+    {"start_date": "12/03/2023", "end_date": "12/16/2023", "timecard_submission_due": "12/14/2023", "timecard_approval_due": "12/18/2023", "pat_submission_due": "12/18/2023", "pat_approval_due": "12/22/2023"},
+    {"start_date": "12/17/2023", "end_date": "12/30/2023", "timecard_submission_due": "12/28/2023", "timecard_approval_due": "01/01/2024", "pat_submission_due": "12/29/2023", "pat_approval_due": "01/05/2024", "effort_certification_period": "2024 Period 1"}
   ],
   "holidays": [
-    {
-      "name": "Christmas",
-      "date": "12/24/2021"
-    },
-    {
-      "name": "New Years",
-      "date": "12/31/2021"
-    },
-    {
-      "name": "M.L.King Day",
-      "date": "1/17/2022"
-    },
-    {
-      "name": "Presidents' Day",
-      "date": "2/21/2022"
-    },
-    {
-      "name": "Memorial Day",
-      "date": "5/30/2022"
-    },
-    {
-      "name": "Independence Day",
-      "date": "7/4/2022"
-    },
-    {
-      "name": "Labor Day",
-      "date": "9/5/2022"
-    },
-    {
-      "name": "Thanksgiving",
-      "date": "11/24/2022"
-    },
     {
       "name": "Christmas",
       "date": "12/26/2022"
     },
     {
       "name": "New Years",
-      "date": "01/02/2023"
+      "date": "12/31/2022"
+    },
+    {
+      "name": "M.L.King Day",
+      "date": "1/16/2023"
+    },
+    {
+      "name": "Presidents' Day",
+      "date": "2/20/2023"
+    },
+    {
+      "name": "Memorial Day",
+      "date": "5/29/2023"
+    },
+    {
+      "name": "Independence Day",
+      "date": "7/4/2023"
+    },
+    {
+      "name": "Labor Day",
+      "date": "9/4/2023"
+    },
+    {
+      "name": "Thanksgiving",
+      "date": "11/23/2023"
+    },
+    {
+      "name": "Christmas",
+      "date": "12/25/2023"
+    },
+    {
+      "name": "New Years",
+      "date": "01/01/2023"
     }
 
   ]
